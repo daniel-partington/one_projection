@@ -1,12 +1,12 @@
 # one_projection
 
-# Usage (incomplete)
+## Usage (incomplete)
 
 ```bash
 $ oneproj [commands]
 ```
 
-# Development
+## Development
 
 Assuming you are in the project directory and are on Windows:
 
