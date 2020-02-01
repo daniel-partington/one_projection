@@ -6,7 +6,7 @@ def test_crs_check():
 
     res = op.check(28355, shp_dir)
 
-    assert all(res.values()) == False
+    assert all(res.values()) == True
 
 if __name__ == '__main__':
     test_crs_check()

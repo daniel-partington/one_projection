@@ -25,8 +25,10 @@ def check(epsg: Union[str, int], tgt_dir: str) -> dict:
     shps = glob("{}/*.shp".format(tgt_dir))
     rsts = glob("{}/*.tif*".format(tgt_dir))
 
+    all_files = shps + rsts
+
     res = {}
-    for shp in shps:
+    for shp in all_files:
         crs = gpd.read_file(shp).crs
         try:
             res[shp] = crs['init'] == dst_crs
