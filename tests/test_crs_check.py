@@ -1,12 +1,24 @@
 import one_projection as op
 
 
-def test_crs_check():
+def test_shp_check():
     shp_dir = "data/shp"
 
     res = op.check(28355, shp_dir)
 
     assert all(res.values()) == True
+# End test_shp_check()
+
+
+def test_rst_check():
+    rst_dir = "data/rst"
+
+    res = op.check(28355, rst_dir)
+
+    assert all(res.values()) == False
+# end test_rst_check()
+
 
 if __name__ == '__main__':
-    test_crs_check()
+    test_shp_check()
+    test_rst_check()

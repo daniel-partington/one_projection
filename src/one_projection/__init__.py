@@ -10,4 +10,6 @@ except DistributionNotFound:
 finally:
     del get_distribution, DistributionNotFound
 
-from .main import *
+from .common import *
+from .check import *
+from .reproject import *
