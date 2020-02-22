@@ -8,11 +8,11 @@ from one_projection import get_files
 
 
 def check_shp(fn_list, epsg, 
-              res=None: Optional[Dict]) -> Dict[str, bool]:
+              res: Optional[Dict] = None) -> Dict[str, bool]:
     if res is None:
         res = {}
     
-    dst_crs = 'epsg:{}'.format(epsg)
+    dst_crs = f'epsg:{epsg}'
     for shp in fn_list:
         crs = gpd.read_file(shp).crs
         try:
