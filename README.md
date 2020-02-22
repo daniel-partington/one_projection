@@ -33,9 +33,8 @@ $ conda install -c conda-forge gdal geopandas rasterio
 $ python setup.py develop
 ```
 
-If all goes well, you should be able to run
+If all goes well, you should be able to run all tests with
 
 ```bash
-$ python setup.py test
+$ py.test
 ```
-
