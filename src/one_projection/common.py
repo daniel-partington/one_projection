@@ -13,7 +13,7 @@ def get_files(tgt_dir: str) -> Tuple[List]:
 
 
 def read_shps(shps: List) -> List:
-    """Reads in shapefiles"""
+    """Generator for reading in shapefiles"""
     for shp in shps:
         yield shp, gpd.read_file(shp)
     # End for
