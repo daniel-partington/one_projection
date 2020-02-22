@@ -2,7 +2,7 @@ import one_projection as op
 
 
 def test_shp_reproject():
-    shp_dir = "data/shp"
+    shp_dir = "tests/data/shp"
 
     tmp = op.reproject(4326, shp_dir)
     for shp in tmp:
